@@ -1,0 +1,21 @@
+## Folder
+admin/
+build/
+dist/
+public/
+node_modules/
+
+## System files
+.vscode
+.cache
+.git
+.svn
+.hg
+.idea
+.js.map
+
+## Config files
+.stylelintrc.json
+.prettierrc.json
+webpack.config.js
+package-lock.json

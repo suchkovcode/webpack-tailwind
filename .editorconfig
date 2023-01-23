@@ -1,0 +1,33 @@
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 3
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+trim_trailing_whitespace = false
+
+
+[*.min.*]
+indent_style = ignore
+trim_trailing_whitespace = false
+insert_final_newline = ignore
+
+
+[node_modules/**.{js,ts,html,css,scss,php}]
+indent_style = ignore
+indent_size = ignore
+end_of_line = ignore
+trim_trailing_whitespace = ignore
+insert_final_newline = ignore
+
+[other/**.{js,ts,html,css,scss,php}]
+indent_style = ignore
+indent_size = ignore
+end_of_line = ignore
+trim_trailing_whitespace = ignore
+insert_final_newline = ignore
