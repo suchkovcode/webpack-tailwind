@@ -3,7 +3,6 @@
 .cache
 .svn
 .hg
-.idea
 
 ## Config files
 package-lock.json
