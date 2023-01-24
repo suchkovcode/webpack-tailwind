@@ -12,12 +12,12 @@
       "start": "cross-env NODE_ENV=development webpack serve",
       "build:dev": "cross-env NODE_ENV=development webpack",
       "build:prod": "cross-env NODE_ENV=production webpack",
-      "test:check": "prettier --check src/**/* && eslint && stylelint src/**/*.less",
-      "test:fix": "prettier --write . && eslint --fix && stylelint src/**/*.less --fix"
+      "test:check": "prettier --check src/**/* && eslint && stylelint src/**/*.css",
+      "test:fix": "prettier --write . && eslint --fix && stylelint src/**/*.css --fix"
    },
    "lint-staged": {
       "*.js": [ "prettier --write", "eslint --fix --color"],
-      "*.less": "stylelint --syntax=scss --fix"
+      "*.css": "stylelint --syntax --fix"
    },
    "devDependencies": {
       "cross-env": "^7.0.3",
@@ -32,7 +32,6 @@
       "css-loader": "^6.7.2",
       "style-loader": "^3.3.1",
       "html-loader": "^4.2.0",
-      "sass-loader": "^13.2.0",
       "postcss-loader": "^7.0.2",
 
       "html-webpack-plugin": "^5.5.0",
@@ -53,7 +52,6 @@
       "tailwindcss": "^3.2.4",
       "prettier": "^2.8.0",
       "favicons": "^7.0.2",
-      "sass": "^1.56.1",
 
       "postcss": "^8.4.19",
       "postcss-sort-media-queries": "^4.3.0",

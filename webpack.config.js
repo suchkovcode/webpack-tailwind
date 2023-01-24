@@ -174,7 +174,7 @@ module.exports = {
             exclude: /(node_modules|bower_components)/,
             include: path.resolve(__dirname, "./src"),
             use: [
-               isDev ? "style-loader" : MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader",
+               isDev ? "style-loader" : MiniCssExtractPlugin.loader, "css-loader", "postcss-loader",
             ],
          }, // End Scss
 
