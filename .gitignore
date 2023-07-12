@@ -1,28 +1,37 @@
-## System files
-.vscode
-.cache
-.svn
-.hg
+#Build generated and folder
+dist/
+build/
+admin/
+public/
+node_modules/
+bower_components/
 
-## Config files
+# Config files
 package-lock.json
 
+# local env files
+.env.local
+.env.*.local
 
-# Logs
-logs
+# Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.DS_Store
+.cache
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.svn
+.hg
 
 # Optional npm cache directory
 .npm
-
-# Dependency directories
-/node_modules
-/jspm_packages
-/bower_components
-/.pnp
-.pnp.js
 
 # Yarn Integrity file
 .yarn-integrity
@@ -33,15 +42,6 @@ yarn-error.log*
 # dotenv environment variables file(s)
 .env
 .env.*
-
-#Build generated and folder
-dist/
-build/
-admin/
-build/
-dist/
-public/
-node_modules/
 
 # Serverless generated files
 .serverless/
@@ -60,7 +60,7 @@ node_modules/
 # *.sublime-project
 
 ### VisualStudioCode ###
-.vscode/*
+.vscode
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
